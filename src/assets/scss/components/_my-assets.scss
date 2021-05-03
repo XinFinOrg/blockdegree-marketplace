@@ -1,0 +1,32 @@
+.my-assets {
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+
+  &__refresh-btn {
+    .btn {
+      float: right;
+    }
+  }
+
+  &__collections,
+  &__assets {
+    display: inline-block;
+    margin: 1rem;
+    border-radius: 1rem;
+  }
+
+  &__collections {
+    width: 30%;
+    height: min-content;
+  }
+
+  &__assets {
+    background-color: white;
+    border: 1px solid lightgrey;
+    width: 100%;
+    .col {
+      flex-grow: 0;
+    }
+  }
+}

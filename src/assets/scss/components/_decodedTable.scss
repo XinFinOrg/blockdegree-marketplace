@@ -1,0 +1,61 @@
+.decoded-table {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  overflow-x: auto;
+
+  thead {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+
+    border: 1px solid lightgrey;
+    border-radius: 0.5rem;
+  }
+
+  &--field,
+  &--value {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  &--field {
+  }
+
+  &--value {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  tbody {
+    border: 1px solid lightgrey;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+  }
+}
+
+.custom-view-table {
+  background: white;
+  border: 1px solid lightgrey;
+  width: 100%;
+
+  thead,
+  tr {
+    border-bottom: 1px solid lightgrey;
+  }
+
+  td,
+  th {
+    padding: 1rem;
+  }
+
+  .highlight {
+    color: $color-new-blue;
+    font-weight: 600;
+  }
+}

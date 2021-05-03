@@ -1,0 +1,85 @@
+.collections {
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 1rem;
+  background-color: white;
+
+  .container {
+    max-width: 100%;
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    font-size: $overall-font-primary;
+    padding: 1rem 1rem 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid $color-primary;
+  }
+
+  &__filter {
+    padding: 1rem;
+  }
+
+  &__elements {
+    padding: 0 1rem 0 1rem;
+    height: 25rem;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+
+    .collection-element {
+      display: inline-block;
+      width: 100%;
+      text-decoration: none;
+      color: $color-new-blue;
+      &:hover {
+        color: $color-new-blue;
+      }
+
+      &__icon {
+        img {
+          width: 5rem;
+        }
+      }
+
+      &__name {
+        padding: 0 1rem;
+      }
+    }
+  }
+}
+
+.add-collection {
+  margin-top: 1rem;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 1rem;
+  background-color: white;
+
+  &__title,
+  &__body {
+    margin: 1rem;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $overall-font-primary;
+    width: 100%;
+    text-align: center;
+    font-size: $overall-font-primary;
+    padding: 1rem 1rem 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid $color-primary;
+  }
+
+  &__body {
+    .row {
+      margin-bottom: 5px;
+    }
+
+    .btn {
+      margin-bottom: 1rem;
+    }
+  }
+}

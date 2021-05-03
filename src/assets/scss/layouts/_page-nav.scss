@@ -1,0 +1,37 @@
+.page-navigation {
+  .col {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__wrapper {
+    background-color: $color-background-primary-lighter;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 70%;
+    border: 1px solid lightgrey;
+
+    .nav-link__ {
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 5px;
+      border-radius: 2px;
+      margin-left: 2px;
+      margin-right: 2px;
+      background-color: $color-background-primary-light;
+
+      &:hover {
+        background-color: lighten($color-primary-light, 10%);
+        color: white;
+      }
+    }
+
+    .active {
+      background-color: lighten($color-primary-light, 10%);
+      color: white;
+    }
+  }
+}

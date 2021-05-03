@@ -1,0 +1,60 @@
+.qr-code-modal {
+  display: flex;
+  justify-content: center;
+
+  p {
+    word-break: break-word;
+  }
+
+  .modal-footer {
+    button {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.balance-btn {
+  border: 1px solid $color-primary;
+}
+
+.balance-modal {
+  .modal-header {
+    .modal-title {
+      font-size: 2rem !important;
+      font-weight: 550;
+      color: $font-color-primary;
+      text-transform: uppercase;
+    }
+
+    .close {
+      color: $font-color-primary;
+    }
+  }
+
+  .modal-content {
+    background-color: $color-background-primary;
+    color: $font-color-primary;
+
+    .balance-item {
+      &__name {
+        font-size: large;
+        font-weight: 500;
+        text-align: center;
+        text-transform: uppercase;
+      }
+  
+      &__value {
+        font-size: medium;
+        text-align: center;
+      }
+    }
+  }
+
+  .modal-footer {
+    button {
+      background-color: $font-color-primary;
+      text-transform: uppercase;
+      border: 1px solid $font-color-primary;
+    }
+  }
+}

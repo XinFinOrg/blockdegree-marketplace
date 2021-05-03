@@ -1,0 +1,37 @@
+.appended-input {
+  display: flex;
+  width: 100%;
+
+  .appendage {
+    text-align: center;
+    width: 6rem;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 1rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border: 1px solid lightgrey;
+  }
+}
+
+.custom-input-1 {
+  input {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  label {
+    font-size: 1.5rem;
+
+    text-align: left;
+    width: 100%;
+    margin: 0 !important;
+    height: 100%;
+    border: none;
+
+    .field-label {
+      padding: 0.5rem;
+    }
+  }
+}
+

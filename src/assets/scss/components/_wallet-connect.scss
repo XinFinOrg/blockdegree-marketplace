@@ -1,0 +1,30 @@
+.wallet-connect {
+  .col-sm-12 .row {
+    padding:5px;
+    margin-bottom: 1rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-primary;
+      color: white;
+    }
+  }
+  .wallet-icon--wrapper {
+    .wallet-icon {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .wallet-name-wrapper {
+    display: flex;
+    align-items: center;
+    .wallet-name {
+      text-transform: uppercase;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.dashboard {
+
+  .epoch,
+  .staked-share,
+  .staked-share-usd {
+    display: flex;
+    justify-content: center;
+  }
+
+  .show-all-func {
+    padding-right: 2rem;
+    font-weight: 550;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .top-row {
+    display: flex;
+    flex-direction: row-reverse;
+
+    div {
+      padding-left: 1rem;
+    }
+  }
+
+  .current-address {
+    &--wrapper {
+
+      &__label {
+        font-weight: 550;
+      }
+
+      display: flex;
+      justify-content: right;
+    }
+  }
+
+  .address-balance {
+    &--wrapper {
+      text-align: right;
+
+      &__title {
+        text-align: right;
+        font-weight: 550;
+      }
+    }
+  }
+
+  .stake-func {
+    background-color: white;
+    padding: 1.5rem;
+    border: 1px solid lightgrey;
+    border-radius: 1rem;
+
+    &--title {
+      font-weight: 550;
+      font-size: large;
+      text-align: center;
+    }
+
+    &--approved-amount {
+      padding-right: 2rem;
+      font-weight: 550;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  .claim-reward {
+    background-color: white;
+    padding: 1.5rem;
+    border: 1px solid lightgrey;
+    border-radius: 1rem;
+
+    &--title {
+      font-weight: 550;
+      font-size: large;
+      text-align: center;
+    }
+  }
+}

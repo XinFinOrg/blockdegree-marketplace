@@ -1,0 +1,15 @@
+.converter {
+  .row {
+    padding-top: 0.5rem;
+  }
+
+  &--function-body {
+    padding: 1rem;
+  }
+
+  &--function-selector {
+    border: 1px solid lightgrey;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+}

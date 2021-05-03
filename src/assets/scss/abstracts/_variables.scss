@@ -1,0 +1,52 @@
+$color-primary: #2a3f4c;
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-lighter: lighten($color-primary, 50%);
+
+$color-background-primary: whitesmoke;
+$color-background-primary-light: lighten($color-background-primary, 10%);
+$color-background-primary-lighter: lighten($color-background-primary, 50%);
+
+$font-color-primary: $color-primary;
+
+$color-blue-dull: #355f7d;
+$color-orange-dull:#c97539;
+
+$color-light-grey: lightgrey;
+$color-light-grey-light: #cdcdcd;
+$color-grey-light-1: #f7f7f7;
+$color-grey-dark: #777;
+$color-white: #ffffff;
+$color-black: #000;
+
+$color-new-blue: #007bff;
+$color-new-green: #25ac37;
+$color-new-red: #ff0000;
+$color-new-orange: #ff8c00;
+$color-new-yellow:#ffc107;
+
+$color-light-blue: #70d6ff;
+$color-very-light-blue: #f8f9fa;
+
+$typo-scale-ratio: 8/9;
+
+$overall-font-primary: 1.5rem;
+$overall-font-secondary: #{$overall-font-primary * $typo-scale-ratio};
+
+$table-one-font-primary: 1.6rem;
+$table-one-font-secondary: #{$table-one-font-primary * $typo-scale-ratio};
+
+$footer-primary: 2.2rem;
+$footer-links: 1.6rem;
+$footer-secondary: 1.4rem;
+
+$header-height: 5rem;
+$sidebar-width: 18rem;
+$sidebar-width-collapsed: 5.5rem;
+$sidebar-scroller-width: 0.75rem;
+$sidebar-transition: 0.5s;
+
+$lg-width: 992px;
+$md-width: 762px;
+$sm-width: 580px;
+
+$sidebar-element-hgt: 3.5rem;
