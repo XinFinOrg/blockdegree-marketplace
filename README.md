@@ -45,7 +45,7 @@ Links to youtube videos, articles.
 
 Anyone is welcomed to contribute to this project.  
 Please create an issue / pull request with proposed bug-fix or feature addition along with a brief on your work.  
-You can also chcek dev task to be done from [here](./DevReadme.md)
+You can also check dev task to be done from [here](./DevReadme.md)
 
 You can also check out our dev channels to get in touch.
 
