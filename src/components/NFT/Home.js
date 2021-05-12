@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { AnimatedNumberCard } from "../common/NumberCard";
 import { Container, Row, Col } from "react-bootstrap";
 import { DEFAULT_COLLECTIONS } from "../../helpers/constant";
-import { SubmitContractTxGeneral } from "../../wallets";
+import { SubmitContractTxGeneralNonAuth } from "../../wallets/xinpay";
 
 const Home = () => {
   const [totalNFT, settotalNFT] = useState(0);
@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     Promise.all(
       DEFAULT_COLLECTIONS.map(({ address }) =>
-        SubmitContractTxGeneral("totalSupply", { type: "nft", address }, "view")
+        SubmitContractTxGeneralNonAuth("totalSupply", { type: "nft", address })
       )
     )
       .then((resp) =>
@@ -23,12 +23,12 @@ const Home = () => {
       .then((resp) => settotalNFT(resp))
       .catch(console.error);
 
-    SubmitContractTxGeneral("getTotalAuctions", { type: "auction" }, "view")
+    SubmitContractTxGeneralNonAuth("getTotalAuctions", { type: "auction" })
       .then((resp) => {
         const allproms = [];
         for (let i = 0; i < resp; i++) {
           allproms.push(
-            SubmitContractTxGeneral("auctions", { type: "auction" }, "view", i)
+            SubmitContractTxGeneralNonAuth("auctions", { type: "auction" }, i)
           );
         }
         return Promise.all(allproms);
@@ -43,7 +43,8 @@ const Home = () => {
         );
         settotalAuction(total);
         settotalAuctionActive(allAddr.length);
-      });
+      })
+      .catch(console.error);
   });
 
   return (

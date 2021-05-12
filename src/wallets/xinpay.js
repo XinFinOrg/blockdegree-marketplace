@@ -2,7 +2,11 @@ import Xdc3, { utils } from "xdc3";
 import detectEthereumProvider from "@metamask/detect-provider";
 import _ from "lodash";
 
-import { CONTRACT_ABI, CONTRACT_ADDRESS } from "../helpers/constant";
+import {
+  CONTRACT_ABI,
+  CONTRACT_ADDRESS,
+  HTTP_PROVIDER,
+} from "../helpers/constant";
 
 import * as actions from "../actions";
 import store from "../redux/store";
@@ -18,6 +22,14 @@ export async function GetProvider() {
   const provider = await detectEthereumProvider();
   return provider;
 }
+
+export const MainnetProvider = () => {
+  return new Xdc3.providers.HttpProvider(HTTP_PROVIDER[50]);
+};
+
+export const ApothemProvider = () => {
+  return new Xdc3.providers.HttpProvider(HTTP_PROVIDER[50]);
+};
 
 export async function GetChainId() {
   let xdc3 = new Xdc3(await GetProvider());
@@ -253,6 +265,29 @@ export async function SubmitContractTxGeneral(
   //   console.log("resp", e);
   //   throw e;
   // }
+}
+
+export async function SubmitContractTxGeneralNonAuth(
+  method,
+  { type, address },
+  ...params
+) {
+  return new Promise((resolve, reject) => {
+    const xdc3 = new Xdc3(MainnetProvider());
+
+    const { abi, address: contractAddress } = getContractAddress(type);
+
+    if (type !== "nft") address = contractAddress;
+
+    const contract = new xdc3.eth.Contract(abi, address);
+
+    contract.methods[method](...params)
+      .call()
+      .then((resp) => {
+        resolve(resp);
+      })
+      .catch(reject);
+  });
 }
 
 export const IsJsonRpcError = (err) => {
