@@ -225,3 +225,30 @@
     }
   }
 }
+
+.animated-number-card {
+  &.red-bg {
+    border-left: 2px solid $color-new-red;
+  }
+
+  &.blue-bg {
+    border-left: 2px solid $color-new-blue;
+  }
+
+  &.green-bg {
+    border-left: 2px solid $color-new-green;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  width: 100%;
+  max-width: 30rem !important;
+  background-color: white;
+  border: 1px solid lightgrey;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
