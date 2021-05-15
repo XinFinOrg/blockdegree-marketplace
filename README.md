@@ -39,7 +39,7 @@ npm start
 
 Links to youtube videos, articles.
 
-( coming soon )
+ - [Integrated NFT Marketplace on BlockDegree](https://www.youtube.com/watch?v=WOWIjxt8Zyw)
 
 ## Contribution
 
