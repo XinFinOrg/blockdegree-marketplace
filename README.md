@@ -40,6 +40,7 @@ npm start
 Links to youtube videos, articles.
 
  - [Integrated NFT Marketplace on BlockDegree](https://www.youtube.com/watch?v=WOWIjxt8Zyw)
+ - [Medium Aritcle](https://medium.com/blockdegree/nfts-blockdegree-shapes-the-future-of-educational-degree-af061c303ff0)
 
 ## Contribution
 
